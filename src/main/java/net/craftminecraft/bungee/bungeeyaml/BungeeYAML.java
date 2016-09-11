@@ -8,10 +8,6 @@ import java.io.IOException;
 import java.util.concurrent.ExecutionException;
 import java.util.logging.Level;
 
-import com.thebuzzmedia.sjxp.rule.IRule;
-import com.thebuzzmedia.sjxp.rule.DefaultRule;
-import com.thebuzzmedia.sjxp.rule.IRule.Type;
-import com.thebuzzmedia.sjxp.XMLParser;
 import net.craftminecraft.bungee.bungeeyaml.pluginapi.ConfigurablePlugin;
 
 public class BungeeYAML extends ConfigurablePlugin {
