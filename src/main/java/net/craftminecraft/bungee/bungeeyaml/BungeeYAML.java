@@ -122,11 +122,6 @@ public class BungeeYAML extends ConfigurablePlugin {
      }*/
 
     public void onEnable() {
-        try {
-            metrics = new Metrics(this);
-            metrics.start();
-        } catch (IOException e) {
-        }
     }
 
     public void onDisable() {
