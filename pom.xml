@@ -73,42 +73,6 @@
           <target>1.7</target>
         </configuration>
       </plugin>
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-shade-plugin</artifactId>
-        <version>2.1</version>
-        <executions>
-          <execution>
-            <phase>package</phase>
-            <goals>
-              <goal>shade</goal>
-            </goals>
-            <configuration>
-              <minimizeJar>false</minimizeJar>
-              <artifactSet>
-                <includes>
-	              <include>com.thebuzzmedia:sjxp</include>
-	              <include>*:xpp3</include>
-	            </includes>
-              </artifactSet>
-              <filters>
-                <filter>
-                  <artifact>*:xpp3</artifact>
-                  <excludes>
-                    <!-- Make the jar as small as possible. sjxp only requires the XmlPullParserFactory and the mxparser classes. -->
-                    <exclude>org/xmlpull/v1/builder/**</exclude>
-                    <exclude>org/xmlpull/v1/dom2_builder/**</exclude>
-					<exclude>org/xmlpull/v1/parser_pool/**</exclude>
-                    <exclude>org/xmlpull/v1/sax2/**</exclude>
-                    <exclude>org/xmlpull/v1/util/**</exclude>
-                    <exclude>org/xmlpull/v1/wrapper/**</exclude>
-                  </excludes>
-                </filter>
-              </filters>
-            </configuration>
-          </execution>
-        </executions>
-      </plugin>
     </plugins>
   </build>
 </project>
