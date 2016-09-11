@@ -35,6 +35,10 @@
       <id>The Buzz Media Maven Repository</id>
       <url>http://maven.thebuzzmedia.com</url>
     </repository>
+    <repository>
+      <id>The maven repository that isnt down like that one up there</id>
+      <url>http://repo.md-5.net/content/groups/public/</url>
+    </repository>
   </repositories>
   
   <dependencies>
